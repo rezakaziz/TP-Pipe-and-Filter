@@ -5,4 +5,8 @@ public class Film extends StockItem {
 		super(rentalPrice,title,itemID);
 		this.acteur=acteur;
 	}
+	
+	public String getActor(){
+		return this.acteur;
+	}
 }
