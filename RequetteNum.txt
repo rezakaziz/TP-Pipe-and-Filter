@@ -1,0 +1,12 @@
+ITEMs:
+0)addStockItem#
+1)checkout: storeItem
+2)checkin:storeItem
+3)Ischeckedout
+4)IsOverDueItems
+5)findbytitle#
+6)findbyActor#
+ 
+Customers:
+10)addcustomer#
+11)Solde:of client#
