@@ -1,4 +1,4 @@
-
+package sample.manager;
 public class StockItem {
 	private float rentalPrice;
 	private String title;
@@ -20,6 +20,10 @@ public class StockItem {
 		return this.itemID;
 	}
 	public String getTitle() {
+		// TODO Auto-generated method stub
+		return this.title;
+	}
+	public String getRentalPrice() {
 		// TODO Auto-generated method stub
 		return this.title;
 	}

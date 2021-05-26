@@ -1,4 +1,4 @@
-
+package sample.manager;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -59,7 +59,7 @@ public  class FilterA2 implements Runnable{
 				this.RemiseItem(0);
 					break;
 			case "2":
-				//Ajout Pénalité
+				//Ajout Pï¿½nalitï¿½
 				System.out.println("Requte 2");
 					break;
 			case "3":

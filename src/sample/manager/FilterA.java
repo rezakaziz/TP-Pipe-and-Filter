@@ -1,8 +1,4 @@
-
-import java.util.List;
-import java.util.Scanner;
-import java.lang.String;
-
+package sample.manager;
 public  class FilterA implements Runnable{
  
     public FilterA(Pipe<String> _dataINPipe, Pipe<Requete> _dataOUTPipe) {
