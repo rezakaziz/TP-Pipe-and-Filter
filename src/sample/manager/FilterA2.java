@@ -1,15 +1,15 @@
-package sample.manager;
 
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 import java.lang.String;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-public  class FilterA2 implements Runnable {
+public  class FilterA2 implements Runnable{
  
-    public FilterA2(Pipe<Requete> _dataINPipe, Pipe<String> _dataOUTPipe, List<Client> clients, List<StockItem> items, List<RentedItem> rentedItems) {
+    public FilterA2(Pipe<Requete> _dataINPipe, Pipe<String> _dataOUTPipe,List<Client> clients,List<StockItem> items,List<RentedItem> rentedItems) {
 		
 		this._dataINPipe = _dataINPipe;
 		this._dataOUTPipe = _dataOUTPipe;
@@ -161,7 +161,7 @@ public  class FilterA2 implements Runnable {
 	 * @param c
 	 * @return
 	 */
-	public boolean LocationItem(StockItem i, String d, Client c){
+	public boolean LocationItem(StockItem i,String d,Client c){
 		RentedItem r=new RentedItem(i.getItemID(),d,c.getCustomerID());
 		this.rentedItems.add(r);
 		return true;

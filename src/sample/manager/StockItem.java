@@ -1,10 +1,14 @@
-package sample.manager;
 
 public class StockItem {
 	private float rentalPrice;
 	private String title;
 	private int itemID;
 	
+	public StockItem(String title){
+		this.itemID=itemID;
+		this.title=title;
+		this.rentalPrice=rentalPrice;
+	}
 	public StockItem(float rentalPrice,String title,int itemID){
 		this.itemID=itemID;
 		this.title=title;
@@ -15,20 +19,15 @@ public class StockItem {
 		// TODO Auto-generated method stub
 		return this.itemID;
 	}
-
 	public String getTitle() {
-		return title;
+		// TODO Auto-generated method stub
+		return this.title;
 	}
-
-	public void setTitle(String title) {
-		this.title = title;
+	public int hashCode(){
+		return this.title.hashCode();
 	}
-
-	public float getRentalPrice() {
-		return rentalPrice;
-	}
-
-	public void setRentalPrice(float rentalPrice) {
-		this.rentalPrice = rentalPrice;
+	public boolean equals(StockItem i){
+		return i.getTitle()==this.title;
+		
 	}
 }
