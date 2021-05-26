@@ -16,14 +16,23 @@ public class RentedItem {
 		return this.itemID;
 	}
 	
-	public String getCustomerID() {
+	public String getdueDate() {
 		// TODO Auto-generated method stub
 		return this.dueDate;
 	}
 	
-	public int getdueDate() {
+	public int getCustomerID() {
 		// TODO Auto-generated method stub
 		return this.customerID;
+	}
+	@Override
+	public int hashCode() {
+        return this.itemID;
+    }
+	
+	@Override
+	public boolean equals(Object r){
+		return this.itemID==((RentedItem) r).getItemID();
 	}
 
 }

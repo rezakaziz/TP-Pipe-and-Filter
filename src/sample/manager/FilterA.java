@@ -33,7 +33,7 @@ public  class FilterA implements Runnable {
 	synchronized void execute() {
 		// TODO Auto-generated method stub
 		String s=_dataINPipe.dataOUT();
-		
+		System.out.println(s);
 		String[] parts=s.split(" ");
 		
 		Requete req=new Requete(parts);
