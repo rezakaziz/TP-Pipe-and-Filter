@@ -1,11 +1,9 @@
 package sample.manager;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Scanner;
-import java.lang.String;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
 public  class FilterA2 implements Runnable{
  

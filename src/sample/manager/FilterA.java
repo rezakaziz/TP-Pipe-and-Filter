@@ -1,4 +1,5 @@
 package sample.manager;
+
 public  class FilterA implements Runnable{
  
     public FilterA(Pipe<String> _dataINPipe, Pipe<Requete> _dataOUTPipe) {
